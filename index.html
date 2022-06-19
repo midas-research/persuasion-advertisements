@@ -10,8 +10,7 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/menu.js"></script>
+
   <style>
     .menu-index {
       color: rgb(255, 255, 255) !important;
@@ -22,7 +21,26 @@
 </head>
 
 <body>
-  <div class="menu-container"></div>
+  <div class="menu-container">
+    <div class="menu">
+      <div class="menu-table flex-row-space-between">
+        <div class="logo flex-row-center">
+          <a href="index.html">Persuasion Understanding</a>
+        </div>
+        <a class="menu-button" tabindex="0" href="javascript:void(0)">
+          <img src="img/menu.png">
+        </a>
+        <div class="menu-items flex-row-center flex-item">
+          <a href="#Introduction" class="menu-index">Introduction</a>
+          <a href="#Annotation Example" class="menu-widget">Annotation Example</a>
+          <a href="#Dataset" class="menu-embedding">Dataset</a>
+          <a href="#Collaborators" class="menu-embedding">Collaborators</a>
+          <a href="#Contact" class="menu-embedding">Contact</a>
+          <a href="https://github.com/midas-research/advise-ad-understanding">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="content-container">
     <div class="content">
       <div class="content-table flex-column">
@@ -61,7 +79,7 @@
         <!--Start Text Only-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 class="add-top-margin">Introduction</h2>
+            <h2 class="add-top-margin" id="Introduction">Introduction </h2>
             <hr>
             <p class="text">
               Marketing communications are the means by which companies and governments inform, remind and persuade
@@ -85,12 +103,12 @@
         <!--Start Text with Images and Image buttons-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 class="add-top-margin">Centered Image and Table</h2>
+            <h2 class="add-top-margin" id="Annotation Example">Annotation Example  </h2>
             <hr>
             <p class="text text-center graph-title">
               Different Advertisements with different persuasive strategies selling same product
             </p>
-            <img class="image center max-width-400 add-top-margin-small" src="img/description.jpg">
+            <img class="image center max-width-700 add-top-margin-small" src="img/description.jpg">
             <p class="text">
               Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
               sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation
@@ -108,28 +126,12 @@
         </div>
         <!--End Text with Images and Image buttons-->
         <!-------------------------------------------------------------------------------------------->
-        <!--Start Text around Image-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 class="add-top-margin">Collaborators</h2>
-            <hr>
-            <p>
-              <img class="image image-wrap-text max-width-400" src="img/Logos.png">
-              <span>
-                1. Indraprastha Institute of Information Technology Delhi<br>
-                2. Adobe Research<br>
-                3. Georgia Institute of Technology<br>
-                4. The State University of New York, Buffalo<br>
-              </span>
-            </p>
-          </div>
-        </div>
-        <!--End Text around Image-->
+        
         <!-------------------------------------------------------------------------------------------->
         <!--Start Text with Centered Image and Table-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 class="add-top-margin">Image Data and Annotations</h2>
+            <h2 class="add-top-margin" id ="Dataset" >Dataset </h2>
             <hr>
             <p class="text text-center graph-title">
               Dataset Distribution
@@ -278,12 +280,25 @@
           </div>
         </div>
         
-        <!--End Credits-->
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Text Only-->
+        <!--Start Text around Image-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 class="add-top-margin">Contact</h2>
+            <h2 class="add-top-margin" id="Collaborators">Collaborators </h2>
+            <hr>
+            <p>
+              <img class="image image-wrap-text max-width-400" src="img/Logos.png">
+              <span>
+                1. Indraprastha Institute of Information Technology Delhi<br>
+                2. Adobe Research<br>
+                3. Georgia Institute of Technology<br>
+                4. The State University of New York, Buffalo<br>
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin" id="Contact">Contact </h2>
             <hr>
             <p class="text">
               For any questions, issues, concerns, and comments, please email Yaman Kumar Singla at
