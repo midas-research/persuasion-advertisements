@@ -34,3 +34,43 @@
   display: none;
   color: #007bff;
 }
+
+.figure {
+    position: relative;
+    width: 360px;  can be omitted for a regular non-lazy image 
+    max-width: 100%;
+}
+.figure img.image-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.figure:hover img.image-hover {
+  opacity: 1;
+}
+
+.figure2 {
+    position: relative;
+    align-self: center;
+    width: 500px;  can be omitted for a regular non-lazy image 
+    max-width: 100%;
+}
+.figure2 img.image-hover {
+  align-self: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.figure2:hover img.image-hover {
+  opacity: 1;
+}
