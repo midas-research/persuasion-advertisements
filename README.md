@@ -4,7 +4,7 @@ This repository is the implementation of the paper :
 > Yaman Kumar Singla, Rajat Jha, Aditya Garg, Ayush Bhardwaj, Tushar, Arunim Gupta, Milan Aggarwal, Balaji Krishnamurthy, Diyi Yang, Rajiv Ratn Shah, and Changyou Chen. "Persuasion Strategies in Advertisements" (2022).
 
 ### Model Architecture
-![image](data:ADVISE-CODE/model/Persuasion Arch Diag.png;)
+![image](https://github.com/midas-research/persuasion-advertisements/blob/advise-code/ADVISE-CODE/model/Persuasion%20Arch%20Diag.png)
 
 ### Requirements
 Use the `environment.yml` file to set up the `conda` environment.
