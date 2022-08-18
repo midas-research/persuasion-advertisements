@@ -8,6 +8,7 @@ import numpy as np
 import copy
 import json
 import time
+import argparse
 
 from model.advise_pytorch import ADVISE
 from dataloaders.ads_dataset import AdsDataset
@@ -20,6 +21,7 @@ batch_size = 128
 lr = 0.001
 lr_decay = 1.0
 lr_decay_epochs = 25
+model_name = "model_kb_vit_512_0005.pth"
 
 action_reason_annot_path = 'data/train/QA_Combined_Action_Reason_train.json'
 
@@ -139,7 +141,17 @@ def statistics_fun(results):
 def main():
 	with open('configs/advise_densecap_data.json') as fp:
 		data_config = json.load(fp)
-	
+	parser = argparse.ArgumentParser()
+	parser.add_argument('--gpu_id', help="Please give a value for gpu id")
+	parser.add_argument('--model_name', help="Please give a value for model name")
+	parser.add_argument('--epochs', help="Please give a value for epochs")
+	args = parser.parse_args()
+	if args.gpu_id is not None:
+		device = torch.device("cuda:"+str(args.gpu_id) if torch.cuda.is_available() else "cpu")
+	if args.model_name is not None:
+		model_name = args.model_name
+	if args.epochs is not None:
+		num_epochs = int(args.epochs)
 	print("Train Dataset")
 	train_dataset = AdsDataset(data_config, split='train')
 	print("Val Dataset")
@@ -331,7 +343,7 @@ def main():
 
 	# load best model weights
 	model.load_state_dict(best_model_wts)
-	add = "trained_models/model_kb_vit_512_0005.pth"
+	add = "trained_models/"+model_name
 	torch.save(model.state_dict(), add)
 	print('Model saved at '+add)
 
