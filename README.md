@@ -16,3 +16,8 @@ To train the model, run the following command:
 ```
 $ python train.py --gpu_id <gpu id> --epochs <number of epochs for training> --model_name <name for trained model>
 ```
+### Inference
+To test the model, run the following command:
+```
+$ python eval.py --gpu_id <gpu id> --model_name <name for trained model>
+```
