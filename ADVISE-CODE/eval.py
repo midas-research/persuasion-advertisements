@@ -5,6 +5,7 @@ from losses.triplet_loss import compute_loss
 from advise_pytorch import ADVISE
 from ads_dataset import AdsDataset
 from torch.utils.data import DataLoader, dataloader, dataset
+import argparse
 
 import os
 import json
@@ -19,7 +20,8 @@ from utils import eval_utils
 split = 'test'
 batch_size = 128
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-PATH = "trained_models/model_kb_vit_512_0005.pth"
+PATH = "trained_models/"
+model_name = "model_kb_vit_512_0005.pth"
 action_reason_annot_path = 'data/test/QA_Combined_Action_Reason_train.json'
 
 def accuracy_on_persuasion(results):
@@ -103,6 +105,17 @@ def evaluate_predictions(groundtruths, results):
 def main():
 	with open('configs/advise_densecap_data.json') as fp:
 		data_config = json.load(fp)
+	
+	parser = argparse.ArgumentParser()
+	parser.add_argument('--gpu_id', help="Please give a value for gpu id")
+	parser.add_argument('--model_name', help="Please give a value for model name")
+	args = parser.parse_args()
+	
+	if args.gpu_id is not None:
+		device = torch.device("cuda:"+str(args.gpu_id) if torch.cuda.is_available() else "cpu")
+	if args.model_name is not None:
+		model_name = args.model_name
+	PATH = PATH + model_name
 
 	groundtruths = load_action_reason_annots(action_reason_annot_path)
 
