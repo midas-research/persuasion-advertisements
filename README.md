@@ -11,5 +11,5 @@ $ conda env create -n ENVNAME --file environment.yml
 ### Training
 To train the model, run the following command:
 ```
-$ python train.py --gpu_id <gpu id>
+$ python train.py --gpu_id <gpu id> --epochs <number of epochs for training> --model_name <name for trained model>
 ```
