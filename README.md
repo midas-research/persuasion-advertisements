@@ -1,7 +1,7 @@
 # Persuasion-Advertisements
 
 This repository is the implementation of the paper :
-> Yaman Kumar Singla, Rajat Aayush Jha, Aditya Garg, Ayush Bhardwaj, Tushar, Arunim Gupta, Milan Aggarwal, Balaji Krishnamurthy, Rajiv Ratn Shah, and Changyou Chen. "Persuasion Strategies in Advertisements" (2022).
+> Yaman Kumar Singla, Rajat Aayush Jha, Aditya Garg, Ayush Bhardwaj, Tushar, Arunim Gupta, Milan Aggarwal, Balaji Krishnamurthy, Rajiv Ratn Shah, and Changyou Chen. "Persuasion Strategies in Advertisements: Dataset, Modeling, and Baselines" (2022).
 
 ### Model Architecture
 ![image](https://github.com/midas-research/persuasion-advertisements/blob/Persuasion-Prediction-Model/Persuasion-Modelling-Code/model/Persuasion%20Arch%20Diag.png)
