@@ -1,0 +1,25 @@
+{
+    "batch_size": 128,
+    "feature_dimensions": 768,
+    "max_stmts_per_image": 5,
+    "max_stmt_len": 30,
+    "max_densecaps_per_image": 5,
+    "max_densecap_len": 10,
+    "max_symbols_per_image": 5,
+    "use_single_densecap": true,
+    "shuffle_buffer_size": 20000, 
+    "number_of_regions": 10,
+    "image_feature_path": "output/img_features_vit_train.npy", 
+    "region_feature_path": "output/roi_features_vit_train.npy",
+    "number_of_val_examples": 10000,  
+    "statement_vocab_path": "output/action_reason_vocab_200d.txt",
+    "statement_annot_path": "data/train/QA_Combined_Action_Reason_train.json",
+    "densecap_vocab_path": "output/densecap_vocab_200d.txt",
+    "densecap_annot_path": "output/densecap_train.json",
+    "symbol_annot_path": "output/symbol_train.json",
+    "symbol_cluster_path": "data/additional/clustered_symbol_list.json",
+    "ocr_annot_path": "output/text_ocr_all_text_features.json",
+    "number_of_val_stmts_per_image": 15
+    "persuasion_strategies_path":"data/annotations_file_train_set.json"
+    "persuasion_vocab_path" : "output/persuasion_vocab"
+}
