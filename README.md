@@ -9,7 +9,7 @@ This repository is the implementation of the paper :
 ### Requirements
 Use the `environment.yml` file to set up the `conda` environment.
 ```
-$ conda env create -n ENVNAME --file environment.yml
+$ conda create --name <env_name> --file requirements.txt
 ```
 ### Training
 To train the model, run the following command:
