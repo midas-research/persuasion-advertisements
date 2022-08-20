@@ -20,6 +20,9 @@ The annotations can be accessed by visiting the website above or visting the lin
 
 [Explore the Dataset](https://midas-research.github.io/persuasion-advertisements/CategoryWisePage.html)
 
+[Model](https://github.com/midas-research/persuasion-advertisements/tree/Persuasion-Prediction-Model)
+
+
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 This work is licensed under a
