@@ -2,12 +2,14 @@
 
 Website live at the link: https://midas-research.github.io/persuasion-advertisements/
 
-Modeling what makes an advertisement persuasive - eliciting the desired response from consumer is critical to the study of propaganda, social psychology, and marketing. Despite its importance, computational modeling of persuasion in computer vision is still in its infancy primarily due to the lack of any benchmark datasets that can provide persuasion strategy labels associated with ads. To this end, motivated by persuasion literature in social psychology and marketing, we introduce an extensive *vocabulary of persuasion strategies* and an *ad image corpus* to model persuasion strategies. We design a multi-task attention fusion model that can leverage other ad-understanding tasks to predict persuasion strategies. Morover, on a small dataset, we also provide image segmentation masks labeling persuasion strategies in the ad images.
+![Persuasion strategies in advertisements. Marketers use both text and vision modalities to create ads containing different messaging strategies. Different persuasion strategies are constituted by using various rhetorical devices such as slogans, symbolism, colors, emotions, allusion.](img/flowchart.png "Persuasion Strategies present in Advertisements")
 
-![Examples of Persuasion Strategies present in Advertisements](img/description.jpg "Examples of Persuasion Strategies present in Advertisements")
+Modeling what makes an advertisement persuasive, i.e., eliciting the desired response from consumer, is critical to the study of propaganda, social psychology, and marketing. Despite its importance, computational modeling of persuasion in computer vision is still in its infancy, primarily due to the lack of benchmark datasets that can provide persuasion-strategy labels associated with ads. Motivated by persuasion literature in social psychology and marketing, we introduce an extensive vocabulary of persuasion strategies and build the first ad image corpus annotated with persuasion strategies. We then formulate the task of persuasion strategy prediction with multi-modal learning, where we design a multi-task attention fusion model that can leverage other ad-understanding tasks to predict persuasion strategies. Further, we conduct a real-world case study on 1600 advertising campaigns of 30 Fortune-500 companies where we use our model’s predictions to analyze which strategies work with different demographics (age and gender). The dataset also provides image segmentation masks, which labels persuasion strategies in the corresponding ad images on the test split. We publicly release our code and dataset
+
+![Different persuasion strategies are used for market- ing the same product (footwear in this example).](img/description.jpg "Examples of Persuasion Strategies present in Advertisements")
 
 The annotations can be accessed by visiting the website above.
 
 If you use our dataset, please cite the following paper:
 
-[1] Yaman Kumar Singla, Rajat Jha, Aditya Garg, Ayush Bhardwaj, Tushar, Arunim Gupta, Milan Aggarwal, Balaji Krishnamurthy, Diyi Yang, Rajiv Ratn Shah, and Changyou Chen. "Persuasion Strategies in Advertisements" (2022). 
+[1] Yaman Kumar Singla, Rajat Jha, Arunim Gupta, Milan Aggarwal, Aditya Garg, Ayush Bhardwaj, Tushar, Balaji Krishnamurthy, Rajiv Ratn Shah, and Changyou Chen. "Persuasion Strategies in Advertisements: Dataset, Modeling, and Baselines" (2022). 
