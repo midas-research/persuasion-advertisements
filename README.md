@@ -9,9 +9,12 @@ Modeling what makes an advertisement persuasive, i.e., eliciting the desired res
 ![Different persuasion strategies are used for market- ing the same product (footwear in this example).](img/description.jpg "Examples of Persuasion Strategies present in Advertisements")
 
 The annotations can be accessed by visiting the website above or visting the links below:
-Images
+[Images](https://drive.google.com/drive/folders/1UJ-lQHg0IW_9n4zvp5PJanmPaqGmsw0u?usp=sharing)
+
 [Train Image Annotations](https://github.com/midas-research/persuasion-advertisements/blob/Persuasion-Prediction-Model/Persuasion-Modelling-Code/data/annotations_file_train_set.json)
+
 [Test Image Annotations](https://github.com/midas-research/persuasion-advertisements/blob/Persuasion-Prediction-Model/Persuasion-Modelling-Code/data/annotations_test_set.json)
+
 [Segmentation Masks](https://github.com/midas-research/persuasion-advertisements/blob/Persuasion-Prediction-Model/Persuasion-Modelling-Code/segmentation-masks/AnnotationImageSegmentation_Batch_5_.xml)
 
 If you use our dataset, please cite the following paper:
