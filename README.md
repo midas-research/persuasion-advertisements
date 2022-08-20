@@ -18,6 +18,8 @@ The annotations can be accessed by visiting the website above or visting the lin
 
 [Segmentation Masks](https://github.com/midas-research/persuasion-advertisements/blob/Persuasion-Prediction-Model/Persuasion-Modelling-Code/segmentation-masks/AnnotationImageSegmentation_Batch_5_.xml)
 
+[Explore the Dataset](https://midas-research.github.io/persuasion-advertisements/CategoryWisePage.html)
+
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 This work is licensed under a
