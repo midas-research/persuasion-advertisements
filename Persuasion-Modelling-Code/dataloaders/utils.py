@@ -152,7 +152,7 @@ def load_ocr_all_text(filename):
 def load_persuasion_vocab(filename):
   with open(filename, 'r') as fp:
     words = [x.strip('\n').split('\t')[0] for x in fp.readlines()]
-  vocab = dict(((word, i + 1) for i, word in enumerate(words)))
+  vocab = dict(((word, i ) for i, word in enumerate(words)))
   return vocab
 
 def load_persuasion_strategies(filename):
