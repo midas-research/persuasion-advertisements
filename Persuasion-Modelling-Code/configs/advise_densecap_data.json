@@ -21,5 +21,5 @@
     "ocr_annot_path": "output/text_ocr_all_text_features.json",
     "number_of_val_stmts_per_image": 15
     "persuasion_strategies_path":"data/annotations_file_train_set.json"
-    "persuasion_vocab_path" : "output/persuasion_vocab"
+    "persuasion_vocab_path" : "output/persuasion_vocab.txt"
 }
