@@ -2,8 +2,8 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 from losses.triplet_loss import compute_loss
-from advise_pytorch import ADVISE
-from ads_dataset import AdsDataset
+from model.advise_pytorch import ADVISE
+from dataloaders.ads_dataset import AdsDataset
 from torch.utils.data import DataLoader, dataloader, dataset
 import argparse
 
