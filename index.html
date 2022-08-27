@@ -3,6 +3,9 @@
 
 <head>
   <title>Persuasion Strategies in Advertisements</title>
+  <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
@@ -17,6 +20,7 @@
       opacity: 1 !important;
       font-weight: 700 !important;
     }
+
   </style>
 </head>
 
@@ -33,7 +37,7 @@
         <div class="menu-items flex-row-center flex-item">
           <a href="#Introduction" class="menu-index">Introduction</a>
           <!-- <a href="#Annotation Example" class="menu-widget">Annotation Example</a> -->
-          <a href="#Dataset" class="menu-embedding">Dataset</a>
+          <a href="#Dataset" class="menu-embedding">Explore Dataset</a>
           <a href="#Collaborators" class="menu-embedding">Collaborators</a>
           <a href="#Contact" class="menu-embedding">Contact</a>
           <a href="#terms-of-use" class="menu-embedding">Terms of Use</a>
@@ -84,25 +88,7 @@
             <hr>
             <p class="text">
 
-              Marketing communications are the primary means of connecting brand with consumers through which the
-              consumer can know
-              what the product is about, what it stands for, who makes it and can be motivated to try it
-              out. Advertisements use
-              various persuasion strategies which allows marketers to link their brands with people, places,
-              experiences, feelings,
-              events, and other things. Through literature survey and analyzing several advertisments, we finalized that
-              persuasion
-              can be
-              carried out using 24 strategies which includes reciprocity, scarcity, concreteness, authority approval,
-              etc. The image below demonstrates different persuasion strategies used for marketing the same product.
-              For
-              this
-              problem, we used the Pitt ads dataset of 64,832 ad images and further added the persuasive strategies
-              labels. Dataset
-              was partially annotated by human annotators, and we used active learning to get persuasive strategies for
-              the rest of
-              the
-              images.
+              Modeling what makes an advertisement persuasive, i.e., eliciting the desired response from consumer, is critical to the study of propaganda, social psychology, and marketing. Despite its importance, computational modeling of persuasion in computer vision is still in its infancy, primarily due to the lack of benchmark datasets that can provide persuasion-strategy labels associated with ads. Motivated by persuasion literature in social psychology and marketing, we introduce an extensive vocabulary of persuasion strategies and build the first ad image corpus annotated with persuasion strategies. We then formulate the task of persuasion strategy prediction with multi-modal learning, where we design a multi-task attention fusion model that can leverage other ad-understanding tasks to predict persuasion strategies. Further, we conduct a real-world case study on 1600 advertising campaigns of 30 Fortune-500 companies where we use our model’s predictions to analyze which strategies work with different demographics (age and gender). The dataset also provides image segmentation masks, which labels persuasion strategies in the corresponding ad images on the test split. We publicly release our code and dataset.
             </p>
 
           </div>
@@ -116,13 +102,25 @@
             <!-- <h2 class="add-top-margin" id="Annotation Example">Annotation Example </h2>
             <hr> -->
             <p class="text text-center graph-title">
-              Different Advertisements with Different Persuasive Strategies Selling Same Product
+              Persuasion Strategies in Advertisements
             </p>
-            <img class="image center max-width-700 add-top-margin-small" src="img/description.jpg">
+            <!-- <embed src="flowchart.pdf" width="800px" height="345px" /> -->
+            <img class="image center max-width-700-new add-top-margin-small" src="img/FlowChart_New.png">
           </div>
         </div>
-        <div class="flex-row">
 
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <!-- <h2 class="add-top-margin" id="Annotation Example">Annotation Example </h2>
+            <hr> -->
+            <p class="text text-center graph-title">
+              Different Advertisements with Different Persuasive Strategies Selling Same Product
+            </p>
+            <img class="image center max-width-800 add-top-margin-small" src="img/description_new.png">
+          </div>
+        </div>
+
+        <div class="flex-row">
         </div>
         <!--End Text with Images and Image buttons-->
         <!-------------------------------------------------------------------------------------------->
@@ -131,14 +129,15 @@
         <!--Start Text with Centered Image and Table-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 class="add-top-margin" id="Dataset">Dataset </h2>
+            <h2 class="add-top-margin" id="Dataset">Explore Dataset</h2>
             <hr>
-            <h3>Pitt Ads Dataset</h3>
-            <p>Pitt ads dataset contains an image dataset of 64,832
-              image ads, and a video dataset of 3,477 ads. This data contains annotations encompassing the topic and
-              sentiment of the ads, questions and answers describing what actions the viewer is prompted to take and the
-              reasoning that the ad presents to persuade the viewer. </p>
-            <p class="text">
+
+            <h3>
+              Distribution of Persuasion Strategies
+            </h3>
+
+            <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+            <script src="js/piechart.js"></script>
 
             <h3>
               Sample Segmented Images
@@ -172,15 +171,22 @@
             </div>
             </div> -->
 
-            <h3>Dataset Links</h3>
+            <h3>Pitt Ads Dataset</h3>
+            <p>Pitt ads dataset contains an image dataset of 64,832 image ads, and a video dataset of 3,477 ads. This data contains annotations encompassing the topic and sentiment of the ads, questions and answers describing what actions the viewer is prompted to take and the reasoning that the ad presents to persuade the viewer. The Pitt Ads dataset can be donwloaded from <a href="https://people.cs.pitt.edu/~kovashka/ads/">here</a>.</p>
+            <p class="text">
+
+            <h3>Get the Dataset</h3>
             <ul>
-              <li>Readme</li>
-              <li><a href="dataset_distribution.html">Dataset statistics</a></li>
-              <li><a href="https://people.cs.pitt.edu/~kovashka/ads/">Download images</a></li>
-              <li>Download image annotations</li>
-              <li><a href="CategoryWisePage.html">Examples of category wise image annotations</a></li>
-              <li><a href="downloads/segmentation.xml" download="segmentation.xml">Download image segmentation
-                  annotations </a></li>
+              <li><a href="https://github.com/midas-research/persuasion-advertisements/blob/Persuasion-Prediction-Model/README.md">Readme</a></li>
+              <li><a href="dataset_distribution.html">Dataset Statistics</a></li>
+              <li><a href="https://drive.google.com/drive/folders/1UJ-lQHg0IW_9n4zvp5PJanmPaqGmsw0u">Images</a></li>
+              <li><a href="https://github.com/midas-research/persuasion-advertisements/blob/Persuasion-Prediction-Model/Persuasion-Modelling-Code/data/annotations_file_train_set.json">Train Image Annotations</a></li>
+              <li><a href="https://github.com/midas-research/persuasion-advertisements/blob/Persuasion-Prediction-Model/Persuasion-Modelling-Code/data/annotations_test_set.json">Test Image Annotations</a></li>
+              <li><a href="CategoryWisePage.html">Explore the Dataset with Category Wise Examples</a></li>
+              <!-- <li><a href="downloads/segmentation.xml" download="segmentation.xml">Segmentation Masks</a></li> -->
+              <li><a href="https://github.com/midas-research/persuasion-advertisements/blob/Persuasion-Prediction-Model/Persuasion-Modelling-Code/segmentation-masks/AnnotationImageSegmentation_Batch_5_.xml">Segmentation Masks</a></li>
+              <li><a href="https://github.com/midas-research/persuasion-advertisements/tree/Persuasion-Prediction-Model">Model</a></li>
+              <li><a href="https://www.preprints.org/manuscript/202208.0377/v1">Read the Paper</a></li>
             </ul>
             </p>
           </div>
@@ -207,8 +213,8 @@
             <h2 class="add-top-margin" id="Contact">Contact </h2>
             <hr>
             <p class="text">
-              For any questions, issues, concerns, and comments, please email Yaman Kumar Singla at
-              yamank@iiitd.ac.in
+              For any questions, issues, concerns, and comments, please email <b>Yaman Kumar Singla</b> at
+              <b>yamank@iiitd.ac.in</b>
             </p>
           </div>
         </div>
