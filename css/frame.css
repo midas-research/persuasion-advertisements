@@ -344,6 +344,10 @@ hr {
   max-width: 700px;
 }
 
+.max-width-600-new {
+  max-width: 600px;
+}
+
 .max-width-140 {
   max-width: 140px;
 }
@@ -527,6 +531,13 @@ ol.nested>li:before {
   min-width: 300px;
 }
 
+.My_center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .iframe {
   border: 0;
   width: 100%;
@@ -648,7 +659,6 @@ ol.nested>li:before {
   display: block;
   overflow-x: auto;
   border: 1px solid #666666;
-  border-collapse: collapse;
   border-spacing: 0;
   empty-cells: show;
   margin: 0;
@@ -658,10 +668,14 @@ ol.nested>li:before {
 .custom-table thead {
   text-align: left;
   border-bottom: 1px solid #666666;
+  border-right: 1px solid #666666;
+  border-left: 1px solid #666666;
 }
 
 .custom-table tfoot {
   border-top: 1px solid #666666;
+  border-right: 1px solid #666666;
+  border-left: 1px solid #666666;
 }
 
 .custom-table tr.bg-color-gray {
