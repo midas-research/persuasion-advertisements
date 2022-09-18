@@ -82,9 +82,23 @@
         <!--End Intro -->
         <!-------------------------------------------------------------------------------------------->
         <!--Start Text Only-->
+
         <div class="flex-row">
           <div class="flex-item flex-column">
             <h2 class="add-top-margin" id="Introduction">Introduction</h2>
+            <!-- <h2 class="add-top-margin" id="Annotation Example">Annotation Example </h2> -->
+            <hr>
+            <p class="text text-center graph-title">
+              Persuasion Strategies in Advertisements
+            </p>
+            <!-- <embed src="flowchart.pdf" width="800px" height="345px" /> -->
+            <img class="image center max-width-700-new add-top-margin-small" src="img/FlowChart_New.png">
+          </div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <!-- <h2 class="add-top-margin" id="Introduction">Introduction</h2> -->
             <hr>
             <p class="text">
 
@@ -97,17 +111,6 @@
         <!--End Text with Buttons-->
         <!-------------------------------------------------------------------------------------------->
         <!--Start Text with Images and Image buttons-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <!-- <h2 class="add-top-margin" id="Annotation Example">Annotation Example </h2>
-            <hr> -->
-            <p class="text text-center graph-title">
-              Persuasion Strategies in Advertisements
-            </p>
-            <!-- <embed src="flowchart.pdf" width="800px" height="345px" /> -->
-            <img class="image center max-width-700-new add-top-margin-small" src="img/FlowChart_New.png">
-          </div>
-        </div>
 
         <div class="flex-row">
           <div class="flex-item flex-column">
@@ -177,8 +180,7 @@
 
             <h3>Get the Dataset</h3>
             <ul>
-              <li><a href="https://github.com/midas-research/persuasion-advertisements/blob/Persuasion-Prediction-Model/README.md">Readme</a></li>
-              <li><a href="dataset_distribution.html">Dataset Statistics</a></li>
+              <!-- <li><a href="dataset_distribution.html">Dataset Statistics</a></li> -->
               <li><a href="https://drive.google.com/drive/folders/1UJ-lQHg0IW_9n4zvp5PJanmPaqGmsw0u">Images</a></li>
               <li><a href="https://github.com/midas-research/persuasion-advertisements/blob/Persuasion-Prediction-Model/Persuasion-Modelling-Code/data/annotations_file_train_set.json">Train Image Annotations</a></li>
               <li><a href="https://github.com/midas-research/persuasion-advertisements/blob/Persuasion-Prediction-Model/Persuasion-Modelling-Code/data/annotations_test_set.json">Test Image Annotations</a></li>
@@ -186,11 +188,139 @@
               <!-- <li><a href="downloads/segmentation.xml" download="segmentation.xml">Segmentation Masks</a></li> -->
               <li><a href="https://github.com/midas-research/persuasion-advertisements/blob/Persuasion-Prediction-Model/Persuasion-Modelling-Code/segmentation-masks/AnnotationImageSegmentation_Batch_5_.xml">Segmentation Masks</a></li>
               <li><a href="https://github.com/midas-research/persuasion-advertisements/tree/Persuasion-Prediction-Model">Model</a></li>
-              <li><a href="https://www.preprints.org/manuscript/202208.0377/v1">Read the Paper</a></li>
+              <li><a href="https://arxiv.org/abs/2208.09626">Read the Paper</a></li>
             </ul>
             </p>
+            <h3>Dataset Statistics</h3>
+            <div class="custom-table-container center add-top-margin-small">
+                <table class="custom-table">
+                    <thead>
+                        <tr class="bg-color-gray">
+                            <th>Persuasive Strategies</th>
+                            <th class="text-center">No. of Class Sample</th>
+                            <th class="text-center">Definition</th>
+                            <!-- <th class="text-center">Representative Prior Work</th> -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Anchoring and comparison</td>
+                            <td class="text-center">48</td>
+                            <td class="text-center"> A product’s value is strongly influenced by what <br> it is compared to.</td>
+                        </tr>
+                        <tr>
+                            <td>Reciprocity</td>
+                            <td class="text-center">186</td>
+                            <td class="text-center"> By obligating the recipient of an act to repayment in
+                                                    <br> the future, the rule for reciprocation begets a sense
+                                                    <br> of future obligation, often unequal in nature</td>
+                        </tr>
+                        <tr>
+                            <td>Concreteness</td>
+                            <td class="text-center">1007</td>
+                            <td class="text-center">Using concrete facts, evidence to appeal to the <br> logic of consumers</td>
+                        </tr>
+                        <tr>
+                            <td>Social Impact</td>
+                            <td class="text-center">103</td>
+                            <td class="text-center">Emphasizes the importance or bigger impact <br> of a product</td>
+                        </tr>
+                        <tr>
+                            <td>Guarantees</td>
+                            <td class="text-center">45</td>
+                            <td class="text-center">Guarantees reduce risk and people try out <br> such products more often.</td>
+                        </tr>
+                        <tr>
+                            <td>Trustworthiness</td>
+                            <td class="text-center">157</td>
+                            <td class="text-center">Trustworthiness indicated honesty and integrity of <br> the source through tropes like years of experience, <br> “trusted brand”, numbers and statistics</td>
+                        </tr>
+                        <tr>
+                            <td>Authority</td>
+                            <td class="text-center">65</td>
+                            <td class="text-center">Authority indicated through expertise, source of power, <br>third-party approval, credentials, and awards</td>
+                        </tr>
+                        <tr>
+                            <td>Customer Reviews and Stories</td>
+                            <td class="text-center">28</td>
+                            <td class="text-center">Informational influence by accepting information <br> obtained from others as evidence about <br> reality, e.g., customer reviews and ratings</td>
+                        </tr>
+                        <tr>
+                            <td>Social Identity</td>
+                            <td class="text-center">126</td>
+                            <td class="text-center">Normative influence, which involves conformity with the positive <br> expectations of “another”, who could be “another person, a <br> group, or one’s self” (includes self-persuasion, fleeting attraction, <br> alter-casting, and exclusivity)</td>
+                        </tr>
+                        <tr>
+                            <td>Scarcity</td>
+                            <td class="text-center">64</td>
+                            <td class="text-center">People assign more value to opportunities when they are less <br>available. This happens due to psychological reactance of losing <br> freedom of choice when things are less available or they use <br> availability  as a cognitive shortcut for gauging quality.</td>
+                        </tr>
+                        <tr>
+                            <td>Foot in the Door</td>
+                            <td class="text-center">18</td>
+                            <td class="text-center">Starting with small requests followed by larger requests to <br> facilitate compliance while maintaining cognitive coherence.</td>
+                        </tr>
+                        <tr>
+                            <td>Reverse Psychology</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">Overcoming resistance (reactance) by postponing consequences <br> to the future, by focusing resistance on realistic concerns, by <br> forewarning that a message will be coming, by acknowledging <br> resistance, by raising self-esteem and a sense of efficacy.</td>
+                        </tr>
+                        <tr>
+                            <td>Anthropomorphism</td>
+                            <td class="text-center">37</td>
+                            <td class="text-center">When a brand or product is seen as human-like, people will <br>like it more and feel closer to it.</td>
+                        </tr>
+                        <tr>
+                            <td>Unclear</td>
+                            <td class="text-center">148</td>
+                            <td class="text-center">If the ad strategy is unclear or it is not in English</td>
+                        </tr>
+                        <tr>
+                            <td>Emotion</td>
+                            <td class="text-center">238</td>
+                            <td class="text-center">Aesthetics, feeling and other non-cognitively demanding <br>features used for persuading consumers</td>
+                        </tr>
+                        <tr>
+                            <td>Amazed</td>
+                            <td class="text-center">141</td>
+                            <td class="text-center">Feeling surprised, astonished, awed, fascinated, intrigued</td>
+                        </tr>
+                        <tr>
+                            <td>Fashionable</td>
+                            <td class="text-center">443</td>
+                            <td class="text-center">Trendy, elegant, beautiful, attractive, sexy</td>
+                        </tr>
+                        <tr>
+                            <td>Feminine</td>
+                            <td class="text-center">173</td>
+                            <td class="text-center">Womanly, girlish</td>
+                        </tr>
+                        <tr>
+                            <td>Active</td>
+                            <td class="text-center">256</td>
+                            <td class="text-center">Feeling energetic, adventurous, vibrant, enthusiastic, playful</td>
+                        </tr>
+                        <tr>
+                            <td>Eager</td>
+                            <td class="text-center">540</td>
+                            <td class="text-center">Feeling of hunger, thirsty, passion</td>
+                        </tr>
+                        <tr>
+                            <td>Cheerful</td>
+                            <td class="text-center">223</td>
+                            <td class="text-center">Feeling delighted, happy, joyful, carefree, optimistic</td>
+                        </tr>
+                        <tr>
+                            <td>Creative</td>
+                            <td class="text-center">402</td>
+                            <td class="text-center">Inventive, productive</td>
+                        </tr>
+                        </tfoot>
+                </table>
+            </div>
           </div>
         </div>
+
 
         <!--Start Text around Image-->
         <div class="flex-row">
@@ -225,10 +355,8 @@
             <p class="text">
               If you use our data, please cite the following papers:<br>
               <br>
-              1. Yaman Kumar Singla, Rajat Jha, Aditya Garg, Ayush Bhardwaj, Tushar, Arunim Gupta, Milan Aggarwal, 
-                  Balaji Krishnamurthy, Diyi Yang, Rajiv Ratn Shah, and Changyou Chen. "Persuasion Strategies in Advertisements" (2022). <br>
-              2. Hussain, Zaeem, Mingda Zhang, Xiaozhong Zhang, Keren Ye, Christopher Thomas, Zuha Agha, Nathan Ong, 
-              and Adriana Kovashka. "Automatic understanding of image and video advertisements." 
+              1. Singla, Yaman Kumar, Rajat Jha, Arunim Gupta, Milan Aggarwal, Aditya Garg, Ayush Bhardwaj, Balaji Krishnamurthy, Rajiv Ratn Shah, and Changyou Chen. "Persuasion Strategies in Advertisements: Dataset, Modeling, and Baselines." arXiv preprint arXiv:2208.09626 (2022). <br>
+              2. Hussain, Zaeem, Mingda Zhang, Xiaozhong Zhang, Keren Ye, Christopher Thomas, Zuha Agha, Nathan Ong, and Adriana Kovashka. "Automatic understanding of image and video advertisements." 
               In Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 1705-1715. 2017. <br>
             </p>
           </div>
