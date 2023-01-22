@@ -36,6 +36,6 @@ This work is licensed under a
 
 If you use our dataset, please cite the following paper:
 
-[1] Singla, Yaman Kumar, Rajat Jha, Arunim Gupta, Milan Aggarwal, Aditya Garg, Ayush Bhardwaj, Balaji Krishnamurthy, Rajiv Ratn Shah, and Changyou Chen. "Persuasion Strategies in Advertisements: Dataset, Modeling, and Baselines." arXiv preprint arXiv:2208.09626 (2022).
+[1] Singla, Yaman Kumar, Rajat Jha, Arunim Gupta, Milan Aggarwal, Aditya Garg, Ayush Bhardwaj, Tushar, Balaji Krishnamurthy, Rajiv Ratn Shah, and Changyou Chen. "Persuasion Strategies in Advertisements: Dataset, Modeling, and Baselines." arXiv preprint arXiv:2208.09626 (2022).
 
 https://arxiv.org/abs/2208.09626
